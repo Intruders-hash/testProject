@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpagestyle.css">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <p class="heading">Join as Tutor or Student</p>
+    <div class="container"> 
+      <div class="box">
+        <form>
+            <select name="" id="field1" class="input-field">
+                <option value="" disabled selected hidden>Select Type</option>
+                <option value="student">Student</option>
+                <option value="tutor">Tutor</option>
+            </select>
+            <input type="text" placeholder="Username or email" class="input-field" id="field2">
+            <div class="inputbox" id="input-container"> 
+              <input type="password" placeholder="Password" class="input-field" id="field3">
+              <img src=
+              "https://www.outsystems.com/Forge_BL/rest/ComponentThumbnail/GetURL_ComponentThumbnail?ProjectImageId=35279" id="togglePassword">
+            </div>
+            <script>
+              const inputContainer = document.getElementById("input-container");
+              const inputField = document.getElementById("field3");
+            
+              inputField.addEventListener("focus", () => {
+                inputContainer.classList.add("focused");
+              });
+            
+              inputField.addEventListener("blur", () => {
+                inputContainer.classList.remove("focused");
+              });
+            </script>
+
+
+
+
+            <script>
+            
+            let icon = document.getElementById("togglePassword");
+            let password = document.getElementById("field3");
+
+            icon.onclick =function(){
+              if(password.type === "password"){
+                password.type = "text";
+                icon.src="https://static.vecteezy.com/system/resources/thumbnails/006/086/018/small/preview-show-interface-icon-free-vector.jpg";
+              }else{
+                password.type = "password";
+                icon.src="https://www.outsystems.com/Forge_BL/rest/ComponentThumbnail/GetURL_ComponentThumbnail?ProjectImageId=35279";
+              }
+            }
+
+
+            </script>
+            
+            <a href="#" class="forgot-password">Forgot password</a>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="signup-text">Don't have an account?
+                <a href="#">Create account</a>
+            </p>
+        </form>
+      </div>
+        <div class="illustration">
+           <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f27322f222a7372285e0514e84e44c7df73b8b0a9f0cc03fc7a746669f780a23?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24" alt="illustration">-->
+            <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?semt=ais_hybrid" alt="illustration">
+        </div>
+      </div>
+</body>
+</html>
