@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course description</title>
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index2.html"><i class="material-icons">home</i>Home</a></li>
+            <li><a href="#"><i class="material-icons">group</i>My Tutors</a></li>
+            <li><a href="#"><i class="material-icons">bookmark</i>Saved</a></li>
+            <style>
+                .material-icons{
+                  position: relative;
+                }
+            </style>
+
+        </ul> 
+         <ul>
+            <li><a href="#"><i class="material-icons">notifications</i></a></li>
+            <li><a href="#"><i class="material-icons">account_circle</i></a></li>
+         </ul>
+    </nav>
+
+    <div class="main">
+         <div class="tutorcard">
+         <img src="https://previews.123rf.com/images/dolgachov/dolgachov1603/dolgachov160306114/54057828-business-people-and-portrait-concept-smiling-businessman-face-or-portrait.jpg" alt="tutorphoto">
+         <h2 class="tutor-name">Charles Leclerc</h2>
+         <div class="skills">
+         <div class="skill-tag">C++</div>
+         <div class="skill-tag-js">Javascript</div>
+         </div>
+        <hr class="divider" />
+        <h3 class="experience-title">Experience</h3>
+        <p class="experience-years">6 years</p>
+        <h3 class="platform-title">On this Platform</h3>
+        <p class="platform-date">10 th Feb,2025</p>
+        <hr class="divider" />
+        <h3 class="description-title">Teacher description</h3>
+        <p class="tutor-description">
+            With 15 years of experience in both learning and teaching, I am a
+            passionate individual who has immersed myself in programming,
+            specializing in C++ and JavaScript. Throughout my journey, I've
+            embraced the dual role of both educator and student, constantly
+            evolving alongside my students. My mission is to inspire curiosity,
+            foster growth, and empower the next generation of tech enthusiasts by
+            sharing knowledge and exploring new technologies together.
+        </p>
+        <hr class="divider" />
+        <h3 class="rate-title">Hour rate</h3>
+        <p class="rate-value">$XX/hr</p>
+        <div class="hirebtn">
+        <button class="hire-button">Hire Tutor</button>
+        </div>
+        </div>
+        
+      
+
+        <div class="section">
+
+        <div class="search-box">
+            <form action="">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">
+                        search
+                    </span>
+                    <input type="search" id="search-input" class="find-tutor" placeholder="Find Tutor">
+                </div>
+            </form>
+            <button id="search" class="search-button">
+                Search
+            </button>
+        </div>
+
+        <div class="section2">
+        <div class="filterbox">
+        <div class="filter">
+            <button class="button-value" onclick="filterResult('All')">All</button>
+            <button class="button-value" onclick="filterResult('10+2')">10+2</button>
+            <button class="button-value" onclick="filterResult('UG')">UG</button>
+            <button class="button-value" onclick="filterResult('PG')">PG</button>
+        </div>
+
+        </div>
+        <div class="results" id="results">
+       
+        </div>
+           
+        </div>
+        </div>
+    </div>
+  
+        <script src="script.js"></script>
+</body>
+</html>
