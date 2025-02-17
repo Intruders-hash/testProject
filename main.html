@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpagestyle.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.tutoring-container {
+    background-color: rgba(253, 254, 255, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 10px 80px 351px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    margin-left: 18px;
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: column;
+  }
+  
+  .main-heading {
+    font-size: 70px;;
+    color: rgba(0, 0, 0, 1);
+    font: 700 /1.3 Crimson Text, -apple-system, Roboto, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .main-description {
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    align-self: start;
+    font: 400 20px/50px Crimson Text, -apple-system, Roboto, Helvetica, sans-serif;
+    align-content: center;
+    margin-left: 32vh;
+    margin-right: 32vh;
+    line-height: 1.35;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    margin-top: -40px;
+    margin-bottom: 70px;
+  }
+  
+  .feature-icon {
+    aspect-ratio: 1.29;
+    object-fit: contain;
+    object-position: center;
+    width: 161px;
+    align-self: center;
+    margin-left: 21px;
+    max-width: 100%;
+  }
+  
+  .feature-icon-schedule {
+    aspect-ratio: 1.55;
+    width: 198px;
+    margin-left: 35px;
+  }
+  
+  .feature-icon-creative {
+    aspect-ratio: 1.35;
+    width: 113px;
+    margin-left: 0;
+  }
+  
+  .feature-text {
+    margin-top: 30px;
+  }
+  
+  .feature-text-schedule {
+    margin-top: 44px;
+  }
+  
+  .feature-text-creative {
+    align-self: end;
+    margin-top: 62px;
+  }
+  
+  @media (max-width: 991px) {
+    .tutoring-container {
+      padding: 100px 20px;
+    }
+  
+    .content-wrapper {
+      max-width: 100%;
+    }
+  
+    .main-heading {
+      max-width: 100%;
+      margin-right: 2px;
+      font-size: 40px;
+    }
+  
+    .description-container {
+      margin-top: 40px;
+    }
+  
+    .main-description {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 47px;
+    }
+  
+    .features-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .features-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .feature-column {
+      width: 100%;
+    }
+  
+    .feature-box {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+      line-height: 47px;
+      padding: 100px 20px;
+    }
+  
+    .feature-text,
+    .feature-text-schedule,
+    .feature-text-creative {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+
+  /*next*/
+  .tutor-card {
+    border-radius: 20px;
+    background-color: rgb(255, 230, 254);
+    display: flex;
+    max-width: 250px;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 36px 43px 18px;
+    font: 600 24px/50px Rubik, sans-serif;
+    border: 1.5px solid rgba(0, 0, 0, 1);
+  }
+
+  .tutor-image {
+    aspect-ratio: 1.53;
+    object-fit: contain;
+    object-position: center;
+    width: 221px;
+    align-self: center;
+    margin-left: 16px;
+    max-width: 100%;
+    border: none;
+  }
+  .tutor-image a{
+    border: none;
+  }
+
+  .tutor-heading {
+    margin-top: 35px;
+    
+  }
+
+  .card p{
+    font-size: 48px;
+    font-family: "quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 991px) {
+    .tutor-card {
+      font-size: 40px;
+      line-height: 47px;
+      padding: 0 20px 100px;
+    }
+
+    .tutor-heading {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+  /*frame*/
+  .container {
+   /* width: 100%;*/
+   /* min-height: 100vh;*/
+    background-color: rgb(251, 254, 252);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(251, 254, 252);
+  }
+  @media (max-width: 640px) {
+    .header {
+      padding: 16px 20px;
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .logo img{
+    max-width: 60px;
+    max-height: 60px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .nav-links {
+      display: none;
+    }
+  }
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+    font: 16px "Lora", serif;
+  }
+  .login-btn {
+    background-color: #f3d7e0;
+    color: #000;
+    padding: 8px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font: 16px "Lora", serif;
+    cursor: pointer;
+    border: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url(https://static.toiimg.com/thumb/msid-117117789,width-1280,height-720,imgsize-1067153,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg);
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .hero-title {
+    color: #000;
+    max-width: 800px;
+    margin-bottom: 16px;
+    font: 600 48px/1.2 "Lora", serif;
+  }
+  @media (max-width: 991px) {
+    .hero-title {
+      font-size: 40px;
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: 32px;
+    }
+  }
+  .hero-subtitle {
+    color: #000;
+    max-width: 600px;
+    margin-bottom: 32px;
+    font: 18px "Lora", serif;
+  }
+  @media (max-width: 991px) {
+    .hero-subtitle {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .hero-subtitle {
+      font-size: 14px;
+    }
+  }
+  .cta-container {
+    display: flex;
+    gap: 16px;
+  }
+  @media (max-width: 640px) {
+    .cta-container {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .cta-button-get-started {
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font: 16px "Lora", serif;
+  }
+  @media (max-width: 640px) {
+    .cta-button-get-started {
+      width: 100%;
+    }
+  }
+  .cta-button-learn-more {
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    font: 16px "Lora", serif;
+  }
+  @media (max-width: 640px) {
+    .cta-button-learn-more {
+      width: 100%;
+    }
+  }
+
+  /* from base */
+  .box{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card{
+    background: #f3d7e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 220px;
+    justify-content: space-between;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card img{
+    width: 64px;
+    height: 64px;
+    margin:auto;
+  }
+
+  .card p{
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+  }
+
+  /* Second part */
+  
+.learning-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.hero-title2 {
+  color: #c16797;
+  text-align: center;
+  align-self: center;
+  font: 800 40px Inter, sans-serif;
+  margin-top: 40px;
+}
+
+.steps-container {
+  align-self: center;
+  margin-top: 34px;
+  width: 896px;
+  max-width: 100%;
+}
+
+.steps-grid {
+  gap: 20px;
+  display: flex;
+}
+
+.step-card {
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #000;
+  margin: 0 auto;
+  padding: 40px 19px;
+  font: 400 15px Inter, sans-serif;
+  border: 1px solid #000;
+  padding-top: 10px;
+}
+
+.step-header {
+  align-self: start;
+  display: flex;
+  font-size:  14px;
+  font-weight: lighter;
+  margin-top: 0px;
+  font-family: 'Nunito', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+}
+
+.step-icon {
+  aspect-ratio: 1.14;
+  object-fit: contain;
+  object-position: center;
+  width: 41px;
+  align-self: start;
+  margin-top: 20px;
+  
+}
+
+.step-title {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.step-description {
+  text-align: left;
+  align-content: baseline;
+  margin-top: 13px;
+  margin-left: 40px;
+}
+
+.action-button {
+  border-radius: 5px;
+  background-color: #c97ac4;
+  align-self: start;
+  color: #fff;
+  margin: 13px 0 0 35px;
+  padding: 7px 22px;
+  font-family: "Istok Web", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.step-image {
+  aspect-ratio: 1.88;
+  object-fit: contain;
+  object-position: center;
+  width: 337px;
+  border-radius: 7px;
+  align-self: center;
+  margin-top: 25px;
+  max-width: 100%;
+}
+
+.tutor-section {
+  background-color: rgba(201, 122, 196, 0.25);
+  margin-top: 53px;
+  width: 100%;
+  padding: 16px 70px 50px;
+}
+
+.tutor-title {
+  color: #000;
+  text-align: center;
+  font: 700 40px "Microsoft JhengHei", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.tutor-content {
+  align-self: end;
+  width: 100%;
+  max-width: 1123px;
+  margin: 32px 67px 0 0;
+}
+
+.tutor-grid {
+  gap: 20px;
+  display: flex;
+}
+
+.tutor-image {
+  margin-left: 180px;
+  width: 363px;
+  max-width: 100%;
+  height: 303px;
+  border: 1px solid #000;
+  border-radius: 18px;
+  box-shadow: inset;
+  object-fit: cover;
+  
+}
+
+.tutor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #000;
+  font: 600 20px "Source Sans Pro", sans-serif;
+}
+
+.tutor-description {
+  /*align-self: stretch;*/
+  font-weight: 247;
+
+}
+
+.tutor-benefits {
+  font-family: "poppins", sans-serif;
+  font-weight: 250;
+  margin-top: 30px;
+  width: 390px;
+}
+
+.tutor-cta {
+  border-radius: 7px;
+  background-color: #c97ac4;
+  margin-top: 35px;
+  width: 302px;
+  max-width: 100%;
+  color: #fff;
+  padding: 10px 70px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    max-width: 100%;
+  }
+  
+  .steps-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  
+  .step-card {
+    max-width: 100%;
+    margin-top: 17px;
+  }
+  
+  .action-button {
+    margin-left: 10px;
+    padding: 0 20px;
+  }
+  
+  .tutor-section {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .tutor-content {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+  
+  .tutor-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .tutor-grid img{
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-left: 50px;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .tutor-image  {
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-left: 50px;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .tutor-info {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  
+  .tutor-description {
+    max-width: 100%;
+  }
+  
+  .tutor-cta {
+    padding: 0 20px;
+  }
+}
+.tutor-section{
+ width: 100vw;
+}</style>
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" />
+
+    <nav class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvf8nTOb20_oG7vPZYKp1FL6YEfOXt_qxh3VUteWwkhrQT4cn3bJEKaVGf2-d3AeQE1FI&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="nav-links">
+                <a href="javascript:void(0);" class="nav-link"
+                    onclick="window.location.href='homepage.html'; window.location.reload(true);">Home</a>
+
+                <a href="About.html" class="nav-link">About</a>
+                <div class="drpdwn-menu">
+                    <button class="drpbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drpdwn-list">
+                        <a href="index.html">Join as Tutor</a>
+                        <a href="signup.html">Sign-up</a>
+                        <a href="thirdpage.html">Courses</a>
+                    </div>
+                </div>
+            </div>
+            <!--<a href="#" class="login-btn">Login</a>-->
+            <button class="login-btn" onclick="window.location.href='Login.html';">Login</button>
+            <!-- <script>
+      document.getElementById("login-btn").onclick = function () {
+          window.location.href = "http://127.0.0.1:5500/testProject/login.html";
+      };
+  </script>
+-->
+            <!--</div>-->
+    </nav>
+    <div class="hero">
+        <div class="hero-title">
+            Unlock Your Potential with Expert Online Tutoring Tailored Just for You
+        </div>
+        <div class="hero-subtitle">
+            Experience personalized learning, flexible scheduling, and proven results
+            with our dedicated tutors.
+        </div>
+        <div class="cta-container">
+            <a href="#steps"><button class="cta-button-get-started">Get Started</button></a>
+            <a href="#FAQ"><button class="cta-button-learn-more">Learn more</button></a>
+        </div>
+    </div>
+    <div class="tutoring-container">
+        <div class="content-wrapper">
+            <p class="main-heading">Experience Tailored Learning with Our Personalized Tutoring Approach</p>
+            <p class="main-description">
+                Our personalized tutoring approach adapts to each student's unique learning style.
+                <!--<br />-->
+                We focus on building confidence and mastery in subjects and skills that matter most.
+            </p>
+            <!--
+          <div class="tutor-card" role="region" aria-label="Expert Tutors Section">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/605653943bd02aa4d9b9f9911b4bf602fa60f718d7a15c4190adf3059918cfd1?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+              class="tutor-image"
+              alt="Expert tutors illustration"
+            />
+            <h2 class="tutor-heading">
+              Expert tutors dedicated to your success.
+            </h2>
+          </div>-->
+            <!--
+          <div class="features-container">
+            <div class="features-grid">
+              <div class="feature-column">
+                <div class="feature-box">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b173e818e8010cb3248695b7f4240a89af5a1fe4322604829d5f72c8f2223ceb?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24" class="feature-icon" alt="Customized learning icon showing personalized education approach" />
+                  <p class="feature-text">Customized lessons for every student's individual needs.</p>
+                </div>
+              </div>
+              <div class="feature-column">
+                <div class="feature-box">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/15343afa1f13789860a2f1bc212477e553356dee12f6508b4ca33ed1daaefbfe?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24" class="feature-icon feature-icon-schedule" alt="Flexible schedule icon representing adaptable learning times" />
+                  <p class="feature-text-schedule">Flexible scheduling to fit your busy lifestyle.</p>
+                </div>
+              </div>
+              <div class="feature-column">
+                <div class="feature-box feature-box-alt">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3c0f3b83efdf9adfbe80deaf4d356f793397d9b0d4046c55de42fbe1c3d8835?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24" class="feature-icon feature-icon-creative" alt="Creative arts icon showing music and dance elements" />
+                  <p class="feature-text-creative">Unleash creativity with music, dance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+        </div>
+        <div class="box">
+            <div class="card">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/605653943bd02aa4d9b9f9911b4bf602fa60f718d7a15c4190adf3059918cfd1?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                    class="tutor-image" alt="Expert tutors illustration" />
+                <p class="tutor-heading">
+                    Expert tutors dedicated to your success.
+                </p>
+            </div>
+            <div class="card">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b173e818e8010cb3248695b7f4240a89af5a1fe4322604829d5f72c8f2223ceb?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                    class="feature-icon" alt="Customized learning icon showing personalized education approach" />
+                <p class="feature-text">Customized lessons for every student's individual needs.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/15343afa1f13789860a2f1bc212477e553356dee12f6508b4ca33ed1daaefbfe?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                    class="feature-icon feature-icon-schedule"
+                    alt="Flexible schedule icon representing adaptable learning times" />
+                <p class="feature-text-schedule">Flexible scheduling to fit your busy lifestyle.</p>
+            </div>
+            <div class="card">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3c0f3b83efdf9adfbe80deaf4d356f793397d9b0d4046c55de42fbe1c3d8835?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                    class="feature-icon feature-icon-creative"
+                    alt="Creative arts icon showing music and dance elements" />
+                <p class="feature-text-creative">Unleash creativity with music, dance.</p>
+            </div>
+        </div>
+        <!--second part-->
+        <section class="learning-section" id="steps">
+            <h1 class="hero-title2">
+                Transform your learning with our expert online<br>
+                tutoring-discover today:
+            </h1>
+
+            <div class="steps-container">
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-header">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9adaade4bcb90d4931f833f0c6d52561dd15d93d1601a0b90e7ca7874832599?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                                alt="Step 1 icon" class="step-icon">
+                            <h2 class="step-title">
+                                Step 1: Create Your Account And<br>
+                                Set Your Learning Goals
+                            </h2>
+                        </div>
+                        <p class="step-description">
+                            our platform guides you through the setup process<br>
+                            seamlessly
+                        </p>
+                        <a href="signup.html"><button class="action-button" tabindex="0">Sign up</button></a>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/48e7238ff7a79872abf7b6c65125d2fb173bb852f927d836a1c6516c5f6b7a1a?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                            alt="Account creation illustration" class="step-image">
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-header">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b210a00e9841f4898f26c77d792e47dd4565817d6bd51991a16e4e03ebdad67?placeholderIfAbsent=true&apiKey=4807caf9d9db4321a3ce4890fab57d24"
+                                alt="Step 2 icon" class="step-icon">
+                            <h2 class="step-title">
+                                Step 2: Select Your interested Area<br>
+                                And Find Tutor
+                            </h2>
+                        </div>
+                        <p class="step-description">
+                            select the subject you need help with and find a tutor<br>
+                            that inspires you
+                        </p>
+                        <div class="box-inside-box">
+                            <div class="button">
+                                <button class="action-button" tabindex="0">Select -></button>
+                            </div>
+                            <div class="threebox">
+                                <div class="box1">
+                                    <img src="https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg"
+                                        alt="img1" class="box-img">
+                                    <p class="box-description">Milena <br>
+                                        English Tutor <br>
+                                        English(Advanced)+2</p>
+                                    <p class="ratings">
+                                        ★ 4.9
+                                    </p>
+                                </div>
+                                <div class="box2">
+                                    <img src="https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg"
+                                        alt="img2" class="box-img">
+                                    <p class="box-description">Alex <br>
+                                        Math Tutor <br>
+                                        Math(Advanced)+2</p>
+                                    <p class="ratings">
+                                        ★ 4.85
+                                    </p>
+                                </div>
+                                <div class="box3">
+                                    <img src="https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg"
+                                        alt="img3" class="box-img">
+                                    <p class="box-description">Sabrina <br>
+                                        Dance Tutor <br>
+                                        Dance(Classical)+2</p>
+                                    <p class="ratings">
+                                        ★ 4.8
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="tutor-section">
+                <h2 class="tutor-title">Become a Tutor and Guide Learners to Success!</h2>
+
+                <div class="tutor-content">
+                    <div class="tutor-grid">
+                        <img src="https://thumbs.dreamstime.com/b/online-school-teacher-quarantine-serious-man-glasses-writes-rules-english-white-board-living-room-interior-195089151.jpg"
+                            class="tutor-image">
+
+                        <div class="tutor-info">
+                            <p class="tutor-description">
+                                Earn money sharing your expert knowledge with students. Sign up to start tutoring online
+                            </p>
+                            <ul class="tutor-benefits">
+                                <li>Share your domain</li>
+                                <li>Find new students</li>
+                                <li>Get paid securely</li>
+                            </ul>
+                            <a href="index.html"><button class="tutor-cta" tabindex="0">Become a Tutor</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+        <!--testimonial-->
+        <div class="heading-container">
+            <h1>Chosen by learners all over the world</h1>
+        </div>
+        <div class="testimonial-container">
+            <button onclick="prevTestimonial()" class="slide-btn">
+                << /button>
+                    <div class="testimonial" id="td1">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="tsen">"Learning at my own pace with the best tutors has been a game changer."</p>
+                        <p class="tname">
+                            <span>Prag</span>
+                        </p>
+                    </div>
+
+                    <div class="testimonial" id="td2">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="tsen">"I love how flexible and supportive the tutors are!"</p>
+                        <p class="tname">
+                            <span>Rohit</span>
+                        </p>
+                    </div>
+
+                    <div class="testimonial" id="td3">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="tsen">"I got the help I needed, when I needed it—such a valuable resource!"</p>
+                        <p class="tname">
+                            <span>Anik</span>
+                        </p>
+                    </div>
+                    <button onclick="nextTestimonial()" class="slide-btn">></button>
+        </div>
+
+        <script>
+            let index = 0;
+            const testimonials = document.querySelectorAll(".testimonial");
+
+            function showTestimonial(i) {
+                testimonials.forEach((t, idx) => {
+                    t.style.display = idx === i ? "block" : "none";
+                });
+            }
+
+            function nextTestimonial() {
+                index = (index + 1) % testimonials.length;
+                showTestimonial(index);
+            }
+
+            function prevTestimonial() {
+                index = (index - 1 + testimonials.length) % testimonials.length;
+                showTestimonial(index);
+            }
+
+            // Initialize first testimonial as active
+            showTestimonial(index);
+        </script>
+
+
+
+
+        <!--Faq-->
+
+        <section class="faq" id="FAQ">
+            <div class="faq-container">
+                <p class="faq-heading">FAQs</p>
+                <p class="faq-description">Here are some common questiones about our tutoring services <br>and how we
+                    can assist you</p>
+            </div>
+            <div class="question-container">
+                <!--<div class="question1">
+      <p class="question">
+      What subjects do you offer?
+      </p>
+      <button class="down-arrow" onclick="dropDown()">
+       <img src="https://w7.pngwing.com/pngs/175/947/png-transparent-arrow-computer-icons-down-arrow-angle-black-desktop-wallpaper-thumbnail.png" alt="down-logo" style="mix-blend-mode: color-burn;">
+       <img src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000" alt=" down-icon" class="down-icon">
+      </button>
+      </div>
+      <div class="answer1">
+      <p class="answer">
+      We offer tutoring in a wide range of subjects including math, science, language arts,dance,music and more. Our experienced tutors
+      are equipped to help students of all ages. If you have a specific subject in mind, feel free to ask!
+      </p>
+    </div>
+  -->
+
+                <details>
+                    <summary class="question">
+                        What subjects do you offer?
+                    </summary>
+                    <p class="answer">
+                        We offer tutoring in a wide range of subjects including math, science, language arts,dance,music
+                        and more. Our
+                        experienced tutors
+                        are equipped to help students of all ages. If you have a specific subject in mind, feel free to
+                        ask!
+                    </p>
+                </details>
+                <details>
+                    <summary class="question">
+                        How do I sign up?
+                    </summary>
+                    <p class="answer">
+                        Signing up is easy! Simply click the 'Sign Up' button on our homepage and fill out the
+                        registration form. Once
+                        submitted, you'll receive a confirmation email to get started.
+                    </p>
+                </details>
+                <details>
+                    <summary class="question">
+                        Are your tutors qualified?
+                    </summary>
+                    <p class="answer">
+                        Absolutely! All our tutors are highly qualified and have undergone a rigorous selection process.
+                        They possess the
+                        necessary credentials and experience to provide effective tutoring. Your child's education is in
+                        great hands!
+                    </p>
+                </details>
+                <details>
+                    <summary class="question">
+                        What is the cost?
+                    </summary>
+                    <p class="answer">
+                        Our pricing varies based on the subject and duration of the tutoring session. We offer
+                        competitive rates and flexible
+                        packages to fit your budget. For detailed pricing information, please visit our pricing page.
+                    </p>
+                </details>
+                <details>
+                    <summary class="question">
+                        Can I change tutors?
+                    </summary>
+                    <p class="answer">
+                        Yes, you can request a change of tutor at any time. We want to ensure that you and your child
+                        are comfortable and
+                        satisfied with the tutoring experience. Just reach out to our support team, and we'll assist
+                        you.
+                    </p>
+                </details>
+            </div>
+            <!--
+    <div class="question2">
+    <p class="question">
+    How do I sign up?
+    </p>
+    <button class="down-arrow" onclick="dropDown()">
+      <img src="https://w7.pngwing.com/pngs/175/947/png-transparent-arrow-computer-icons-down-arrow-angle-black-desktop-wallpaper-thumbnail.png" alt="down-logo" style="mix-blend-mode: color-burn;">
+      <img src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000" alt=" down-icon" class="down-icon">
+    </button>
+    </div>
+    <div class="answer2">
+    <p class="answer">
+    Signing up is easy! Simply click the 'Sign Up' button on our homepage and fill out the registration form. Once
+    submitted, you'll receive a confirmation email to get started.
+    </p>
+    </div>
+    <div class="question3">
+    <p class="question">
+    Are your tutors qualified?
+    </p>
+    <button class="down-arrow" onclick="dropDown()">
+      <img src="https://w7.pngwing.com/pngs/175/947/png-transparent-arrow-computer-icons-down-arrow-angle-black-desktop-wallpaper-thumbnail.png" alt="down-logo" style="mix-blend-mode: color-burn;">
+      <img src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000" alt=" down-icon" class="down-icon">
+    </button>
+    </div>
+    <div class="answer3">
+    <p class="answer">
+    Absolutely! All our tutors are highly qualified and have undergone a rigorous selection process. They possess the
+    necessary credentials and experience to provide effective tutoring. Your child's education is in great hands!
+    </p>
+    </div>
+    <div class="question4">
+    <p class="question">
+    What is the cost?
+    </p>
+    <button class="down-arrow" onclick="dropDown()">
+      <img src="https://w7.pngwing.com/pngs/175/947/png-transparent-arrow-computer-icons-down-arrow-angle-black-desktop-wallpaper-thumbnail.png" alt="down-logo" style="mix-blend-mode: color-burn;">
+      <img src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000" alt=" down-icon" class="down-icon">
+    </button>
+    </div>
+    <div class="answer4">
+    <p class="answer">
+    Our pricing varies based on the subject and duration of the tutoring session. We offer competitive rates and flexible
+    packages to fit your budget. For detailed pricing information, please visit our pricing page.
+    </p>
+    </div>
+    <div class="question5">
+    <p class="question">
+    Can I change tutors?
+    </p>
+    <button class="down-arrow" onclick="dropDown()">
+      <img src="https://w7.pngwing.com/pngs/175/947/png-transparent-arrow-computer-icons-down-arrow-angle-black-desktop-wallpaper-thumbnail.png" alt="down-logo" style="mix-blend-mode: color-burn;">
+      <img src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000" alt=" down-icon" class="down-icon">
+    </button>
+    </div>
+    <p class="answer">
+    Yes, you can request a change of tutor at any time. We want to ensure that you and your child are comfortable and
+    satisfied with the tutoring experience. Just reach out to our support team, and we'll assist you.
+    </p>
+    </div>
+  </div>
+
+<script>
+  
+  function dropDown(answerClass) {
+    
+    const answer = document.querySelector(`.${answerClass}`);
+    if (answer.style.display === 'none' || answer.style.display === '') {
+      answer.style.display = 'block';  // Show the answer
+    } else {
+      answer.style.display = 'none';  // Hide the answer
+    }
+  }
+  window.onload = function () {
+    const answers = document.querySelectorAll('.answer');
+    answers.forEach(answer => {
+      answer.style.display = 'none';  // Hide all answers by default
+    });
+  };
+</script>
+-->
+        </section>
+        <!--footer-->
+
+        <section class="endpart">
+            <div class="contacts">
+                <div class="leftbox">
+                    <p>Adress:</p>
+                    <p>Contacts:</p>
+                    <div class="footerlogo">
+                        <img src="https://img.icons8.com/?size=100&id=447&format=png&color=000000" alt="linkedinLogo"
+                            id="linkedin">
+                        <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="instalogo"
+                            id="insta">
+                        <img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000" alt="fblogo"
+                            id="fb">
+                    </div>
+                </div>
+                <div class="rightbox1">
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Our Services</a></p>
+                    <p><a href="#">Testimonials</a></p>
+                    <p><a href="#">Blog Post</a></p>
+                    <p><a href="#">Contact us</a></p>
+                </div>
+                <div class="rightbox2">
+                    <p><a href="#">FAQs</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Career</a></p>
+                    <p><a href="#">Community</a></p>
+                    <p><a href="#">Events</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="end">
+                <div class="en">
+                    <p class="endtxt"><a href="#">Privacy Policy</a></p>
+                    <p class="endtxt"><a href="#">Terms of Service</a></p>
+                    <p class="endtxt"><a href="#">Cookie Setting</a></p>
+                </div>
+            </div>
+
+        </section>
+</body>
+
+</html>
+
+<!-- help -->

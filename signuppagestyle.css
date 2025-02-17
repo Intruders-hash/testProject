@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.background {
+    position: fixed;
+    background-image: url('https://img.freepik.com/free-vector/online-tutor-concept-illustration_114360-20299.jpg?ga=GA1.1.1183613745.1738766382&semt=ais_hybrid');
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(6.5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    z-index: -2;
+
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 96, 125, 0.5);
+    z-index: -1;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+input,
+select {
+    width: 45%;
+    height: 40px;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 7px 9px 7px;
+}
+
+form {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+
+    color: black;
+    margin-top: 40px;
+}
+
+form label {
+
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+form label p {
+
+    display: block;
+    text-align: center;
+    position: relative;
+
+
+}
+
+
+form input[type="button"] {
+    background-color: rgb(209, 26, 145);
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    height: 45px;
+
+}
+
+form input[type="button"]:hover {
+    background-color: rgb(180, 20, 130);
+}
